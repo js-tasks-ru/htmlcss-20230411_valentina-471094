@@ -1,4 +1,6 @@
 @import '../fonts/fonts.css';
+@import './normalize.css';
+@import './styles.css';
 
 :root {
     --white: #ffffff;
@@ -19,6 +21,11 @@
     --secondary: var(--purple);
 }
 
-* {
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: var(--black);
     font-family: 'Roboto', sans-serif;
 }
