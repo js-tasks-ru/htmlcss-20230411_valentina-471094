@@ -7,10 +7,10 @@
   background: var(--white);
   border: 1px solid var(--grey-3);
   border-radius: 8px;
+  padding: 16px 24px 24px;
 }
 
 .histogram__header {
-  padding: 16px 24px 39px 24px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -31,14 +31,14 @@
 }
 
 .histogram__toggler {
-  margin: 0;
+  outline: none;
   padding-top: 3px;
   color: var(--blue-1);
   cursor: pointer;
 }
 
 .histogram__context {
-  padding: 0 29px 24px 26px;
+  padding: 39px 5px 0 2px;
   display: flex;
   flex-direction: row;
   align-items: flex-end;
