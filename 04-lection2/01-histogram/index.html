@@ -31,11 +31,13 @@
         39, 35, 45, 30, 11, 30, 11, 35, 17, 67, 22, 39, 22, 30, 39, 50, 11, 22, 30, 35, 11, 50, 67, 22, 39, 22, 30, 39, 50, 11, 22, 30, 35, 11, 50]
   const maxHeight = Math.max(...histogramColumnHeights);
   const histogram = document.getElementsByClassName("histogram__context")[0];
-  histogramColumnHeights.forEach(height => {
-    const column = document.createElement("div");
-    column.classList.add("histogram__column");
-    column.style.height = ((height * defaultMaxHeight)/maxHeight).toFixed()  + 'px';
-    histogram.appendChild(column);
-  });
+  if(histogram) {
+      histogramColumnHeights.forEach(height => {
+          const column = document.createElement("div");
+          column.classList.add("histogram__column");
+          column.style.height = ((height * defaultMaxHeight)/maxHeight).toFixed()  + 'px';
+          histogram.appendChild(column);
+      });
+  }
 </script>
 </html>
