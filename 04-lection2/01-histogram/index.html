@@ -1,11 +1,41 @@
 <!DOCTYPE html>
-<!-- Страница с гистограммой -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./histogram.css">
-    </head>
-    <body>
-
-    </body>
+<head>
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <link rel="stylesheet" href="./histogram.css">
+</head>
+<body>
+  <main style="padding: 15px">
+    <div class="histogram">
+      <div class="histogram__header">
+        <div class="histogram_details">
+          <p class="histogram__title">
+            Total orders
+          </p>
+          <h4 class="histogram__sub-title">
+            50254
+          </h4>
+        </div>
+        <p class="histogram__toggler">
+          View all
+        </p>
+      </div>
+      <div class="histogram__context">
+      </div>
+    </div>
+  </main>
+</body>
+<script>
+  const defaultMaxHeight = 50;
+  const histogramColumnHeights = [50, 67, 22, 39, 22, 30, 39, 50, 11, 22, 30, 35, 11, 50, 11, 39, 30, 22, 35, 30, 11,
+        39, 35, 45, 30, 11, 30, 11, 35, 17, 67, 22, 39, 22, 30, 39, 50, 11, 22, 30, 35, 11, 50, 67, 22, 39, 22, 30, 39, 50, 11, 22, 30, 35, 11, 50]
+  const maxHeight = Math.max(...histogramColumnHeights);
+  const histogram = document.getElementsByClassName("histogram__context")[0];
+  histogramColumnHeights.forEach(height => {
+    const column = document.createElement("div");
+    column.classList.add("histogram__column");
+    column.style.height = ((height * defaultMaxHeight)/maxHeight).toFixed()  + 'px';
+    histogram.appendChild(column);
+  });
+</script>
 </html>
