@@ -26,16 +26,14 @@
   </main>
 </body>
 <script>
-  const defaultMaxHeight = 50;
-  const histogramColumnHeights = [50, 67, 22, 39, 22, 30, 39, 50, 11, 22, 30, 35, 11, 50, 11, 39, 30, 22, 35, 30, 11,
-        39, 35, 45, 30, 11, 30, 11, 35, 17, 67, 22, 39, 22, 30, 39, 50, 11, 22, 30, 35, 11, 50, 67, 22, 39, 22, 30, 39, 50, 11, 22, 30, 35, 11, 50]
-  const maxHeight = Math.max(...histogramColumnHeights);
+  const histogramColumnHeights = [100, 90, 22, 39, 22, 72, 39, 50, 11, 22, 30, 35, 81, 50, 11, 39, 30, 22, 35, 30, 11,
+        39, 35, 45, 30, 11, 30, 88, 35, 17, 67, 22, 39, 22, 30, 39, 50, 63, 22, 30, 35, 11, 50, 67, 22, 39, 22, 30, 39, 50, 11, 22, 30, 35, 11, 50]
   const histogram = document.getElementsByClassName("histogram__context")[0];
   if(histogram) {
       histogramColumnHeights.forEach(height => {
           const column = document.createElement("div");
           column.classList.add("histogram__column");
-          column.style.height = ((height * defaultMaxHeight)/maxHeight).toFixed()  + 'px';
+          column.style.height = height + '%';
           histogram.appendChild(column);
       });
   }
