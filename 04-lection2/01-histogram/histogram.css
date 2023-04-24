@@ -35,7 +35,7 @@
 .histogram__toggler {
   margin: 0;
   padding-top: 3px;
-  color: #4263EB;
+  color: var(--blue-1);
   cursor: pointer;
 }
 
@@ -48,6 +48,6 @@
 }
 
 .histogram__column {
-  background: #4263EB;
+  background: var(--blue-1);
   flex-grow: 1;
 }
