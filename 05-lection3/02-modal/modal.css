@@ -1,0 +1,10 @@
+.modal {
+  position: fixed;
+  background: #ACB5BD;
+  display: none;
+  background: var(--white);
+  border-radius: 8px;
+  padding: 30px 40px 33px;
+  width: 100vw;
+  height: 100vh;
+}
