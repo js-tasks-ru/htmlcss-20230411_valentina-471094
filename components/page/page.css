@@ -4,11 +4,6 @@
   flex-direction: column;
 }
 
-.page__header {
-  margin: 0 160px;
-}
-
-.page__context {
-  padding: 0 160px;
+.page__main {
   flex-grow: 1;
 }
