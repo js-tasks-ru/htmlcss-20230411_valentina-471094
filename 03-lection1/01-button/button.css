@@ -32,7 +32,7 @@
 }
 
 .button_alternate {
-  --text_color: var(--grey-4);
+  --text_color: var(--grey-5);
   --background_color: transparent;
   --hover_color: transparent;
 
