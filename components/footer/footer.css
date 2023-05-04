@@ -23,3 +23,12 @@
   text-align: center;
   margin: 0;
 }
+
+.footer_template {
+  background: var(--grey-1);
+  padding: 56px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--grey-3);
+  text-align: center;
+}
