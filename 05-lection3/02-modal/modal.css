@@ -11,6 +11,7 @@
   right: 0;
   display: none;
   background-color: rgba(196, 196, 196, 0.5 );
+  color: var(--grey-5);
 }
 
 .modal__window {
@@ -30,7 +31,6 @@
 }
 
 .modal__content {
-  color: var(--grey-4);
   margin: 0;
   padding-top: 14px;
 }
@@ -40,4 +40,6 @@
   right: 15px;
   top: 15px;
   cursor: pointer;
+  width: 16px;
+  height: 16px;
 }
