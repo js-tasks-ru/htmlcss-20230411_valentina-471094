@@ -34,6 +34,11 @@
   transform: translate(-50%);
 }
 
+.tooltip__trigger {
+  width: 24px;
+  height: 24px;
+}
+
 .tooltip__trigger:hover ~ .tooltip__bubble {
   display: block;
 }
