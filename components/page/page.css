@@ -23,7 +23,7 @@
   padding: 36px 0;
 }
 
-.page__context_grid {
+.page__layout {
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 56px;
