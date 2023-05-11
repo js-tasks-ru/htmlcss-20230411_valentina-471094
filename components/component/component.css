@@ -1,0 +1,23 @@
+.component {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  background: var(--white);
+  box-shadow: 0 2px 4px rgba(33, 36, 41, 0.05);
+  border-radius: 12px;
+  padding: 32px 106px 64px 42px;
+}
+
+.component__title {
+  margin: 0;
+  font-size: 28px;
+  line-height: 38px;
+  color: var(--grey-5);
+}
+
+.component__preview {
+  max-width: 300px;
+  margin-top: 24px;
+}

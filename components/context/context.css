@@ -1,5 +1,5 @@
 .context {
-    background: #F9FAFC;
+    background: var(--grey-1);
     border-top: 1px solid var(--grey-2);
     border-bottom: 1px solid var(--grey-2);
 }
