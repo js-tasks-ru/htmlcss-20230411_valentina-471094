@@ -43,3 +43,14 @@
   width: 16px;
   height: 16px;
 }
+
+.modal__window_preview {
+  position: relative;
+  transform: none;
+  max-width: 200px;
+  top: 0;
+  left: 0;
+  border: 1px solid var(--grey-3);
+  pointer-events: none;
+  padding: 1em;
+}

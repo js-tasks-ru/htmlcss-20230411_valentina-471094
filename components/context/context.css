@@ -1,13 +1,30 @@
 .context {
-    background: #F9FAFC;
-    border-top: 1px solid var(--grey-2);
-    border-bottom: 1px solid var(--grey-2);
+  background: #F9FAFC;
+  border-top: 1px solid var(--grey-2);
+  border-bottom: 1px solid var(--grey-2);
 }
 
 .context__cards {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 30px;
-    padding: 68px 0;
+  display: grid;
+  grid-template-columns: repeat(3, calc(33.3333% - 20px));
+  grid-template-rows: repeat(auto-fill, minmax(350px, auto));
+  grid-gap: 30px;
+  padding: 68px 0;
+}
+
+@media screen and (max-width: 992px) {
+  .context__cards {
+    grid-template-columns: repeat(2, calc(50% - 8px));
+    column-gap: 16px;
+    row-gap: 23px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .context__cards {
+    grid-template-columns: 1fr;
+    padding: 21px 0;
+    column-gap: 16px;
+    row-gap: 23px;
+  }
 }

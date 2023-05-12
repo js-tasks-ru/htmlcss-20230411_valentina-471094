@@ -3,7 +3,7 @@
 <head>
   <link rel="stylesheet" href="./assets/css/main.css">
 </head>
-<body>
+<body style="min-width: 320px">
   <div class="page">
     <header class="header page__header">
       <div class="container">
@@ -23,14 +23,14 @@
                 <div class="tooltip__bubble">Helper Text</div>
               </div>
             </div>
-            <div>
+            <div class="card__info">
               <h3 class="card__title">Tooltip</h3>
               <div class="card__sub-title">Container</div>
             </div>
           </div>
           <div class="card">
             <div class="card__context"></div>
-            <div>
+            <div class="card__info">
               <h3 class="card__title">Custom form elements</h3>
               <div class="card__sub-title">Element</div>
             </div>
@@ -88,16 +88,26 @@
                 </div>
               </div>
             </div>
-            <div>
+            <div class="card__info">
               <h3 class="card__title">Calendar</h3>
               <div class="card__sub-title">Container</div>
             </div>
           </div>
           <div class="card">
             <div class="card__context">
-              <img src="assets/images/modal-example.png" style="width: 100%">
+              <div class="modal__window modal__window_preview">
+                <svg id="modal-close" class="modal__close-trigger">
+                  <use href="../../assets/images/icons.svg#clear"></use>
+                </svg>
+                <div class="modal__title">
+                  Modal title
+                </div>
+                <p class="modal__content">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                </p>
+              </div>
             </div>
-            <div>
+            <div class="card__info">
               <h3 class="card__title">Modal dialog</h3>
               <div class="card__sub-title">Container</div>
             </div>
@@ -132,7 +142,7 @@
                 </div>
               </div>
             </div>
-            <div>
+            <div class="card__info">
               <h3 class="card__title">Histogram</h3>
               <div class="card__sub-title">Element</div>
             </div>
@@ -143,7 +153,7 @@
                 <img class="avatar__img" src="https://lumiere-a.akamaihd.net/v1/images/p_disneymovies_avatarthewayofwater_1710_b7d39b03.jpeg?region=0%2C0%2C540%2C810" alt="avatar">
               </div>
             </div>
-            <div>
+            <div class="card__info">
               <h3 class="card__title">Avatar</h3>
               <div class="card__sub-title">Element</div>
             </div>
