@@ -36,3 +36,13 @@ html, body {
     color: var(--black);
     font-family: 'Roboto', sans-serif;
 }
+
+body {
+    min-width: 320px;
+}
+
+@media (max-width: 768px) {
+    .hidden-sm {
+        display: none;
+    }
+}

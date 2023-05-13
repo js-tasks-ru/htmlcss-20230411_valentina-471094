@@ -21,3 +21,10 @@
   max-width: 300px;
   margin-top: 24px;
 }
+
+@media (max-width: 768px) {
+  .component {
+    padding: 0;
+    box-shadow: none;
+  }
+}

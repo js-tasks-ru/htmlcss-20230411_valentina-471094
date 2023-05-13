@@ -40,10 +40,12 @@
   color: var(--black);
 }
 
-.tooltip__trigger:hover ~ .tooltip__bubble {
+.tooltip__trigger:hover ~ .tooltip__bubble,
+.tooltip_show-helper .tooltip__bubble
+{
   display: block;
 }
 
-.tooltip_show-helper .tooltip__bubble {
-  display: block;
+.tooltip_template {
+  margin: 70px 0 30px 35px;
 }

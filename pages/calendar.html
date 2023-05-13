@@ -1,10 +1,102 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <title>Calendar</title>
   <link rel="stylesheet" href="../assets/css/main.css">
 </head>
-<body style="min-width: 320px">
-  <div class="page">
+<body>
+<div class="page page_template">
+  <header class="header header_template">
+    <div class="container">
+      <div class="header__navigation">
+        <svg class="header__logo"><use href="../assets/images/icons.svg#logo"></use></svg>
+      </div>
+    </div>
+  </header>
+  <div class="page__context">
+    <div class="container">
+      <div class="page__layout">
+        <div class="menu hidden-sm">
+          <div class="menu__section">
+            <h4 class="menu__title">Components</h4>
+            <ul class="menu__items">
+              <li><a class="menu__item" href="modal.html">Modal</a></li>
+              <li><a class="menu__item" href="tooltip.html">Tooltip</a></li>
+              <li><a class="menu__item" href="avatar.html">Avatar</a></li>
+              <li><a class="menu__item menu__item_active" href="#">Calendar</a></li>
+              <li><a class="menu__item" href="histogram.html">Histogram</a></li>
+              <li><a class="menu__item" href="elements.html">Custom form elements</a></li>
+            </ul>
+          </div>
+          <div class="menu__section">
+            <ul class="menu__items">
+              <li><a class="menu__item" href="../index.html">Main page</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="component">
+          <h3 class="component__title">
+            Calendar
+          </h3>
+          <div class="component__preview">
+            <div class="calendar">
+              <div class="calendar__title">October 2019</div>
+              <div class="calendar__wrapper">
+                <div class="calendar__inner">
+                  <span class="calendar__item calendar__item_day">Mon</span>
+                  <span class="calendar__item calendar__item_day">Tue</span>
+                  <span class="calendar__item calendar__item_day">Wed</span>
+                  <span class="calendar__item calendar__item_day">Thu</span>
+                  <span class="calendar__item calendar__item_day">Fri</span>
+                  <span class="calendar__item calendar__item_day">Sat</span>
+                  <span class="calendar__item calendar__item_day">Sun</span>
+                  <span class="calendar__item"></span>
+                  <span class="calendar__item"></span>
+                  <span class="calendar__item "></span>
+                  <span class="calendar__item"></span>
+                  <span class="calendar__item"></span>
+                  <span class="calendar__item">1</span>
+                  <span class="calendar__item">2</span>
+                  <span class="calendar__item">3</span>
+                  <span class="calendar__item">4</span>
+                  <span class="calendar__item">5</span>
+                  <span class="calendar__item">6</span>
+                  <span class="calendar__item">7</span>
+                  <span class="calendar__item">8</span>
+                  <span class="calendar__item">9</span>
+                  <span class="calendar__item">10</span>
+                  <span class="calendar__item">11</span>
+                  <span class="calendar__item">12</span>
+                  <span class="calendar__item">13</span>
+                  <span class="calendar__item">14</span>
+                  <span class="calendar__item">15</span>
+                  <span class="calendar__item">16</span>
+                  <span class="calendar__item">17</span>
+                  <span class="calendar__item calendar__item_active">18</span>
+                  <span class="calendar__item calendar__item_between-active">19</span>
+                  <span class="calendar__item calendar__item_between-active">20</span>
+                  <span class="calendar__item calendar__item_between-active">21</span>
+                  <span class="calendar__item calendar__item_between-active">22</span>
+                  <span class="calendar__item calendar__item_active">23</span>
+                  <span class="calendar__item">24</span>
+                  <span class="calendar__item">25</span>
+                  <span class="calendar__item">26</span>
+                  <span class="calendar__item">27</span>
+                  <span class="calendar__item">28</span>
+                  <span class="calendar__item">29</span>
+                  <span class="calendar__item">30</span>
+                  <span class="calendar__item">31</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+  <div class="footer footer_template">
+    <div class="container">Reusable component library</div></div>
+</div>
 </body>
 </html>
