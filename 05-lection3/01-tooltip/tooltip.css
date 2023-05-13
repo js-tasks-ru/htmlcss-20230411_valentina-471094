@@ -41,7 +41,7 @@
 }
 
 .tooltip__trigger:hover ~ .tooltip__bubble,
-.tooltip_show-helper .tooltip__bubble
+.tooltip_show-bubble .tooltip__bubble
 {
   display: block;
 }
