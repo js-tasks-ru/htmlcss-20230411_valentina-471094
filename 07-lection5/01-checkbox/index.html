@@ -1,11 +1,56 @@
 <!DOCTYPE html>
-<!-- Страница чекбокса -->
-<html lang="ru">
+<html lang="en">
     <head>
+        <title>Checkbox</title>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./checkbox.css">
     </head>
-    <body>
-
+    <body style="margin: 100px">
+    <div style="display: flex; flex-direction: column; gap: 15px">
+        <label class="checkbox">
+            <input class="checkbox__source" type="checkbox">
+            <div class="checkbox__state">
+                <div class="checkbox__trigger">
+                    <svg class="checkbox__icon">
+                        <use href="../../assets/images/icons.svg#check"></use>
+                    </svg>
+                </div>
+                <div class="checkbox__label">Default</div>
+            </div>
+        </label>
+        <label class="checkbox">
+            <input class="checkbox__source" type="checkbox" checked>
+            <div class="checkbox__state">
+                <div class="checkbox__trigger">
+                    <svg class="checkbox__icon">
+                        <use href="../../assets/images/icons.svg#check"></use>
+                    </svg>
+                </div>
+                <div class="checkbox__label">Checked</div>
+            </div>
+        </label>
+        <label class="checkbox">
+            <input class="checkbox__source" type="checkbox" disabled>
+            <div class="checkbox__state">
+                <div class="checkbox__trigger">
+                    <svg class="checkbox__icon">
+                        <use href="../../assets/images/icons.svg#check"></use>
+                    </svg>
+                </div>
+                <div class="checkbox__label">Disabled</div>
+            </div>
+        </label>
+        <label class="checkbox">
+            <input class="checkbox__source" type="checkbox" disabled checked>
+            <div class="checkbox__state">
+                <div class="checkbox__trigger">
+                    <svg class="checkbox__icon">
+                        <use href="../../assets/images/icons.svg#check"></use>
+                    </svg>
+                </div>
+                <div class="checkbox__label">Disabled</div>
+            </div>
+        </label>
+    </div>
     </body>
 </html>
