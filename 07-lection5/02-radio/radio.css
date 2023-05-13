@@ -58,7 +58,7 @@
 }
 
 .radio__source:disabled ~ .radio__state {
-  cursor: not-allowed;
+  cursor: default;
 }
 
 .radio__source:disabled ~ .radio__state .radio__label {
