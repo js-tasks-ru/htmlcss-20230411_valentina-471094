@@ -52,7 +52,7 @@
 }
 
 .checkbox__source:disabled ~ .checkbox__state {
-  cursor: not-allowed;
+  cursor: default;
 }
 
 .checkbox__source:disabled ~ .checkbox__state .checkbox__trigger {
