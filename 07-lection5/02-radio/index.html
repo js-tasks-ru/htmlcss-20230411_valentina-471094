@@ -1,11 +1,34 @@
 <!DOCTYPE html>
 <!-- Страница радио -->
-<html lang="ru">
+<html lang="en">
     <head>
+        <title>Radio button</title>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./radio.css">
     </head>
-    <body>
-
+    <body style="margin: 100px">
+    <div style="display: flex; flex-direction: column; gap: 15px">
+      <label class="radio">
+            <input class="radio__source" type="radio" name="radio">
+            <div class="radio__state">
+                <div class="radio__trigger"></div>
+                <div class="radio__label">Default</div>
+            </div>
+        </label>
+      <label class="radio">
+        <input class="radio__source" type="radio" name="radio" checked>
+        <div class="radio__state">
+          <div class="radio__trigger"></div>
+          <div class="radio__label">Checked</div>
+        </div>
+      </label>
+      <label class="radio">
+        <input class="radio__source" type="radio" name="radio" disabled>
+        <div class="radio__state">
+          <div class="radio__trigger"></div>
+          <div class="radio__label">Disabled</div>
+        </div>
+      </label>
+    </div>
     </body>
 </html>
