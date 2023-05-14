@@ -1,11 +1,59 @@
 <!DOCTYPE html>
-<!-- Страница с полем ввода -->
-<html lang="ru">
+<html lang="en">
     <head>
+        <title>Input</title>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./input.css">
     </head>
-    <body>
-
+    <body style="margin: 100px">
+    <div style="display: grid; grid-template-columns: 350px 350px; column-gap: 30px; row-gap: 16px">
+        <div class="input">
+            <label class="input__label">Label</label>
+            <div class="input__group">
+                <input class="input__source" type="text" placeholder="Placeholder">
+            </div>
+        </div>
+        <div class="input">
+            <label class="input__label">Focus</label>
+            <div class="input__group">
+                <input class="input__source" type="text" value="Filled Input">
+            </div>
+        </div>
+        <div class="input input_success">
+            <label class="input__label">Success</label>
+            <div class="input__group">
+                <input class="input__source" type="text" value="Success">
+                <svg class="input__icon"><use href="../../assets/images/icons.svg#success"></use></svg>
+            </div>
+        </div>
+        <div class="input input_invalid">
+            <label class="input__label">Error</label>
+            <div class="input__group">
+                <input class="input__source" type="text" value="Error">
+                <svg class="input__icon"><use href="../../assets/images/icons.svg#error"></use></svg>
+            </div>
+        </div>
+        <div class="input input_success">
+            <label class="input__label">Success</label>
+            <div class="input__group">
+                <input class="input__source" type="text" value="Success" disabled>
+                <svg class="input__icon"><use href="../../assets/images/icons.svg#success"></use></svg>
+            </div>
+        </div>
+        <div class="input input_invalid">
+            <label class="input__label">Error</label>
+            <div class="input__group">
+                <input class="input__source" type="text" value="Error" disabled>
+                <svg class="input__icon"><use href="../../assets/images/icons.svg#error"></use></svg>
+            </div>
+        </div>
+        <div class="input">
+            <label class="input__label">Disabled</label>
+            <div class="input__group">
+                <input class="input__source" type="text" value="Disabled" disabled>
+            </div>
+        </div>
+    </div>
+    </body>
     </body>
 </html>
