@@ -1,0 +1,79 @@
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.input__label {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--grey-3);
+}
+
+.input__group {
+  position: relative;
+}
+
+.input__source {
+  width: 100%;
+  box-sizing: border-box;
+  background: var(--white);
+  border: 1px solid var(--grey-2);
+  border-radius: 8px;
+  padding: 16px 23px 12px;
+  font-size: 20px;
+  line-height: 26px;
+  color: var(--grey-5);
+  outline: none;
+}
+
+.input__source::placeholder {
+  color: var(--grey-2);
+}
+
+.input__source:focus {
+  border-color: var(--blue-1);
+  box-shadow: 0 1px 1px rgba(51, 154, 240, 0.1);
+}
+
+.input__icon {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 20px;
+  height: 20px;
+}
+
+.input_success .input__source,
+.input_error .input__source {
+  padding-right: 43px;
+}
+
+.input_success .input__source ~ .input__icon {
+  color: var(--blue-1);
+}
+
+.input_invalid .input__source ~ .input__icon {
+  color: var(--red)
+}
+
+.input_invalid .input__source {
+  border-color: var(--red)
+}
+
+.input__source:disabled {
+  border-color: var(--grey-3);
+  background-color: var(--grey-2);
+  color: var(--grey-3);
+}
+
+.input__source:disabled ~ .input__icon {
+  color: var(--grey-3);
+}
