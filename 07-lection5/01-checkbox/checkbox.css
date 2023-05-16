@@ -52,7 +52,7 @@
 }
 
 .checkbox__source:disabled ~ .checkbox__state {
-  cursor: default;
+  pointer-events: none;
 }
 
 .checkbox__source:disabled ~ .checkbox__state .checkbox__trigger {
