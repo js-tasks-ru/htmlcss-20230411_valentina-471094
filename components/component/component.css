@@ -22,6 +22,10 @@
   margin-top: 24px;
 }
 
+.component__preview_tooltip-offset {
+  margin: 94px 0 30px 35px;
+}
+
 @media (max-width: 768px) {
   .component {
     padding: 0;
