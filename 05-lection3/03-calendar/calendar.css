@@ -10,7 +10,7 @@
   line-height: 20px;
   padding: 28px 26px 32px;
   width: 100%;
-  max-width: 304px;
+  max-width: 300px;
 }
 
 .calendar__title {
@@ -60,3 +60,17 @@
 .calendar__item_between-active {
   background: var(--grey-6);
 }
+
+.calendar_preview {
+  width: 200px;
+  padding: 15px;
+}
+
+.calendar_preview .calendar__title {
+  font-size: 14px;
+}
+
+.calendar_preview .calendar__item {
+  font-size: 9px;
+}
+

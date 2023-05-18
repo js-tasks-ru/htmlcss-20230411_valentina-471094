@@ -33,6 +33,7 @@
 .modal__content {
   margin: 0;
   padding-top: 14px;
+  color: var(--grey-5);
 }
 
 .modal__close-trigger {
@@ -42,4 +43,21 @@
   cursor: pointer;
   width: 16px;
   height: 16px;
+  color: var(--grey-5);
+}
+
+.modal_preview {
+  position: relative;
+  display: block;
+}
+
+.modal_preview .modal__window {
+  position: relative;
+  transform: none;
+  max-width: 200px;
+  top: 0;
+  left: 0;
+  border: 1px solid var(--grey-3);
+  pointer-events: none;
+  padding: 1em;
 }

@@ -7,34 +7,37 @@
   <div class="page">
     <header class="header">
       <div class="container">
+        <div class="header__navigation">
+          <svg class="header__logo"><use href="./assets/images/icons.svg#logo"></use></svg>
+        </div>
         <h1 class="header__title">Reusable component library</h1>
       </div>
     </header>
     <main class="context page__main">
       <div class="container">
         <div class="context__cards">
-          <div class="card">
+          <a class="card" href="pages/tooltip.html">
             <div class="card__context">
-              <div class="tooltip">
+              <div class="tooltip tooltip_show-bubble">
                 <svg class="tooltip__trigger"><use href="../../assets/images/icons.svg#help"></use></svg>
                 <div class="tooltip__bubble">Helper Text</div>
               </div>
             </div>
-            <div>
+            <div class="card__info">
               <h3 class="card__title">Tooltip</h3>
               <div class="card__sub-title">Container</div>
             </div>
-          </div>
-          <div class="card">
+          </a>
+          <a class="card" href="pages/elements.html">
             <div class="card__context"></div>
-            <div>
+            <div class="card__info">
               <h3 class="card__title">Custom form elements</h3>
               <div class="card__sub-title">Element</div>
             </div>
-          </div>
-          <div class="card">
+          </a>
+          <a class="card" href="pages/calendar.html">
             <div class="card__context">
-              <div class="calendar">
+              <div class="calendar calendar_preview">
                 <div class="calendar__title">October 2019</div>
                 <div class="calendar__wrapper">
                   <div class="calendar__inner">
@@ -85,21 +88,33 @@
                 </div>
               </div>
             </div>
-            <div>
+            <div class="card__info">
               <h3 class="card__title">Calendar</h3>
               <div class="card__sub-title">Container</div>
             </div>
-          </div>
-          <div class="card">
+          </a>
+          <a class="card" href="pages/modal.html">
             <div class="card__context">
-              <img src="assets/images/modal-example.png" style="width: 100%">
+              <div class="modal modal_preview">
+                <div class="modal__window">
+                  <svg id="modal-close" class="modal__close-trigger">
+                    <use href="../../assets/images/icons.svg#clear"></use>
+                  </svg>
+                  <div class="modal__title">
+                    Modal title
+                  </div>
+                  <p class="modal__content">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                  </p>
+                </div>
+              </div>
             </div>
-            <div>
+            <div class="card__info">
               <h3 class="card__title">Modal dialog</h3>
               <div class="card__sub-title">Container</div>
             </div>
-          </div>
-          <div class="card">
+          </a>
+          <a class="card" href="pages/histogram.html">
             <div class="card__context">
               <div class="histogram">
                 <div class="histogram__header">
@@ -111,9 +126,6 @@
                       50254
                     </h4>
                   </div>
-                  <a class="histogram__toggler">
-                    View all
-                  </a>
                 </div>
                 <div class="histogram__context">
                   <div class="histogram__column" style="height: 100%"></div>
@@ -129,22 +141,22 @@
                 </div>
               </div>
             </div>
-            <div>
+            <div class="card__info">
               <h3 class="card__title">Histogram</h3>
               <div class="card__sub-title">Element</div>
             </div>
-          </div>
-          <div class="card">
+          </a>
+          <a class="card" href="pages/avatar.html">
             <div class="card__context">
               <div class="avatar avatar_large">
                 <img class="avatar__img" src="https://lumiere-a.akamaihd.net/v1/images/p_disneymovies_avatarthewayofwater_1710_b7d39b03.jpeg?region=0%2C0%2C540%2C810" alt="avatar">
               </div>
             </div>
-            <div>
+            <div class="card__info">
               <h3 class="card__title">Avatar</h3>
               <div class="card__sub-title">Element</div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </main>

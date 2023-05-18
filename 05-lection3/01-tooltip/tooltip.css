@@ -37,8 +37,11 @@
 .tooltip__trigger {
   width: 24px;
   height: 24px;
+  color: var(--black);
 }
 
-.tooltip__trigger:hover ~ .tooltip__bubble {
+.tooltip__trigger:hover ~ .tooltip__bubble,
+.tooltip_show-bubble .tooltip__bubble
+{
   display: block;
 }
